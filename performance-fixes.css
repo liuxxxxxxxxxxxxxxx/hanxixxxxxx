@@ -1,0 +1,9 @@
+/* Opt out of the experimental mandatory snap behavior: it trapped vertical scrolling. */
+html { scroll-snap-type: none; }
+.project, .about, footer { scroll-snap-align: none; scroll-snap-stop: normal; }
+
+/* Keep the pages responsive while videos are only fetched near the viewport. */
+.project-track { overscroll-behavior-x: auto; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}

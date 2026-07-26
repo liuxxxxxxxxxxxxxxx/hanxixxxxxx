@@ -1,0 +1,9 @@
+/* Full-frame video treatment and interactive hero layer */
+.hero { background: #090909; }
+.hero-media { position: absolute; inset: 0; width: 100%; padding: 0; border: 0; background: #090909; cursor: pointer; }
+.hero-video { object-fit: contain; transform: none; }
+.hero-shade, .hero-copy, .hero-credit { pointer-events: none; }
+.hero-copy a { pointer-events: auto; }
+.project-media { background: #090909; }
+.project-media video { object-fit: contain; }
+.project-media:hover video { transform: none; }

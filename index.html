@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#121211" />
+    <title>刘函希 — Film Editor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="overrides.css" />
+    <link rel="stylesheet" href="parallax-gallery.css" />
+    <link rel="stylesheet" href="snap-scroll.css" />
+    <link rel="stylesheet" href="depth-atmosphere.css" />
+    <link rel="stylesheet" href="performance-fixes.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="mark" href="#top" aria-label="刘函希首页">LX</a>
+      <nav aria-label="主导航"><a href="#work">Work</a><a href="#about">Info</a></nav>
+      <a class="contact" href="mailto:hello@liuhanxi-film.com">Contact <span>↗</span></a>
+    </header>
+
+    <main id="top">
+      <section id="work" class="works">
+        <div class="section-head"><p class="eyebrow">刘函希剪辑作品 · SELECTED WORK</p><p class="count">( 03 )</p></div>
+        <div class="project-track" aria-label="横向项目画廊">
+        <article class="project feature firefly" data-mood="#6f613c" data-video="media/web/firefly.mp4" data-title="萤火虫" data-meta="叙事短片 · 2025">
+          <button class="project-media" aria-label="播放《萤火虫》">
+            <video class="preview-video" data-src="media/previews/firefly.mp4" muted playsinline preload="none"></video>
+            <span class="play">播放 <i>↗</i></span>
+          </button>
+          <div class="project-info"><div><p class="project-num">01 / 03</p><h2>萤火虫</h2><p class="meta">叙事短片 · 2025</p></div><p class="description">留学归来的 Lili 悉心照料失忆的姥爷，祖孙俩在笨拙日常里彼此陪伴。当姥爷意外走失，Ezia 自动驾驶出租车化身“守护者”，带他平稳回家。为寻回记忆，Lili 又带着他踏上归乡之旅；科技温柔地避开一切崎岖，姥爷终于与记忆里的爱人重逢，在心底跳完最爱的华尔兹。</p></div>
+        </article>
+
+        <article class="project offset memory" data-mood="#24536d" data-video="media/web/memory.mp4" data-title="记忆的框" data-meta="沉浸式影像 · 2024">
+          <button class="project-media" aria-label="播放《记忆的框》">
+            <video class="preview-video" data-src="media/previews/memory.mp4" muted playsinline preload="none"></video>
+            <span class="play">播放 <i>↗</i></span>
+          </button>
+          <div class="project-info"><div><p class="project-num">02 / 03</p><h2>记忆的框</h2><p class="meta">沉浸式影像 · 2024</p></div><p class="description">一部探索记忆、时间与自我和解的沉浸式影像作品。28 岁的林晓举起相机时，意外拍到 18 岁的自己——蓝色冷调、小而封闭的房间里，少女也望见了站在温暖空旷室外的她。双屏交互的叙事，让回望与凝视在同一瞬间发生。</p></div>
+        </article>
+
+        <article class="project right perfume" data-mood="#743622" data-video="media/web/perfume.mp4" data-title="香水" data-meta="预告剪辑练习 · 2023">
+          <button class="project-media" aria-label="播放《香水》">
+            <video class="preview-video" data-src="media/previews/perfume.mp4" muted playsinline preload="none"></video>
+            <span class="play">播放 <i>↗</i></span>
+          </button>
+          <div class="project-info"><div><p class="project-num">03 / 03</p><h2>香水</h2><p class="meta">预告剪辑练习 · 2023</p></div><p class="description">他能闻到世界上所有的香味，却唯独没有自己的味道。为了留住世间迷人的芬芳，他寻访名师，学习香水的留存。当发现油膏能吸收香味，一场致命的杀戮就此展开。正如他所坚信的：“生命的灵魂就是她们的香味。”</p></div>
+        </article>
+        </div>
+      </section>
+
+      <section class="about" id="about"><p class="eyebrow">ABOUT</p><div><h2>在每一次切换之间，<br />寻找情绪的重力。</h2><p>刘函希是一位专注于叙事、品牌影像与实验短片的剪辑师。她相信剪辑不只关乎速度，而是观看方式的重新组织。</p><a href="mailto:hello@liuhanxi-film.com">开始对话 <span>↗</span></a></div></section>
+    </main>
+    <aside class="gallery-status" aria-hidden="true"><span class="status-index">01</span><span class="status-line"></span><span>03</span></aside>
+    <footer><span>© 2026 刘函希</span><span>SHANGHAI / EVERYWHERE</span><span>SCROLL TO REMEMBER</span></footer>
+
+    <dialog class="viewer" aria-label="作品视频播放器"><button class="close" aria-label="关闭视频">×</button><div class="viewer-inner"><video controls playsinline></video><div><p class="eyebrow viewer-meta"></p><h2 class="viewer-title"></h2></div></div></dialog>
+    <script src="script.js"></script>
+  </body>
+</html>

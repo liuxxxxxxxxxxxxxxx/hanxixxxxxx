@@ -1,0 +1,16 @@
+:root { --mood: #6f613c; }
+body { background: #11110f; transition: background-color .8s ease; }
+body::before { content: ""; position: fixed; inset: 0; z-index: -2; pointer-events: none; background: radial-gradient(circle at 78% 38%, color-mix(in srgb, var(--mood) 46%, transparent), transparent 40%), linear-gradient(120deg, #10100f 15%, color-mix(in srgb, var(--mood) 23%, #10100f) 100%); transition: background 1s ease; }
+.gallery-status { position: fixed; z-index: 4; left: 3.3vw; bottom: 28px; display: flex; align-items: center; gap: 9px; color: #e9e5d9; font: 10px "DM Mono", monospace; letter-spacing: .08em; mix-blend-mode: difference; }
+.status-line { width: 38px; height: 1px; background: currentColor; opacity: .65; }
+.project { position: relative; isolation: isolate; overflow: hidden; }
+.project::before { content: ""; position: absolute; z-index: -1; inset: 0; opacity: .8; background: radial-gradient(ellipse at 20% 82%, color-mix(in srgb, var(--project-mood) 45%, transparent), transparent 47%); transition: opacity .75s ease; }
+.firefly { --project-mood: #a18b4f; }.memory { --project-mood: #2c7599; }.perfume { --project-mood: #9d4328; }
+.project-media { border: 1px solid rgba(235, 232, 220, .18); box-shadow: 0 32px 90px rgba(0,0,0,.42); transform: translateZ(0) scale(.95); opacity: .76; transition: transform .9s cubic-bezier(.2,.8,.2,1), opacity .8s ease, box-shadow .8s ease; }
+.project.is-active .project-media { transform: translateZ(0) scale(1); opacity: 1; box-shadow: 0 42px 110px rgba(0,0,0,.62); }
+.project-info { position: relative; margin-top: 17px; padding: 18px 0 0; border-top: 1px solid rgba(235, 232, 220, .34); }
+.project-info::after { content: "CLICK TO VIEW"; position: absolute; top: 17px; right: 0; color: rgba(235,232,220,.75); font: 10px "DM Mono", monospace; letter-spacing: .08em; }
+.project-info h2 { font-size: clamp(35px, 4.8vw, 76px); line-height: .95; }
+.project-info .description { max-width: 430px; color: rgba(235,232,220,.88); }
+.section-head { position: sticky; top: 0; z-index: 3; background: rgba(16,16,15,.3); backdrop-filter: blur(14px); }
+@media (max-width: 700px) { .gallery-status { left: 20px; bottom: 18px; }.project-media { transform: none; opacity: 1; }.project-info::after { display: none; }.project-info h2 { font-size: 42px; } }

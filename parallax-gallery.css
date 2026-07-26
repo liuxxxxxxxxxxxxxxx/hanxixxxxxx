@@ -1,0 +1,13 @@
+/* Horizontal gallery adaptation: independent artwork panels with a restrained parallax drift. */
+@media (min-width: 701px) {
+  .works { padding-right: 0; overflow: hidden; }
+  .section-head { margin-right: 7vw; }
+  .project-track { display: flex; gap: 7vw; width: 100%; overflow-x: auto; overscroll-behavior-x: contain; padding: 42px 7vw 84px; scroll-snap-type: x mandatory; scrollbar-width: none; cursor: ew-resize; }
+  .project-track::-webkit-scrollbar { display: none; }
+  .project { flex: 0 0 min(76vw, 1040px); padding: 0; scroll-snap-align: start; }
+  .project-media, .offset .project-media, .right .project-media { width: 100%; margin-left: 0; aspect-ratio: 1.42; }
+  .project-info, .offset .project-info, .right .project-info { width: 100%; margin-left: 0; }
+  .project-info .description { max-width: 450px; }
+  .project-info { transition: transform .12s linear; }
+}
+.hero-video, .project-media video { filter: none !important; }

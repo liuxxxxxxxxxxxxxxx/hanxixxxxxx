@@ -1,0 +1,16 @@
+html { scroll-snap-type: y mandatory; }
+.works { padding: 0; }
+.section-head { height: 66px; padding: 0 7vw; align-items: center; }
+.project-track { display: block; overflow: visible; padding: 0; scroll-snap-type: none; }
+.project { flex: none; min-height: 100svh; padding: 100px 7vw 64px; scroll-snap-align: start; scroll-snap-stop: always; display: flex; flex-direction: column; justify-content: center; }
+.project-media, .offset .project-media, .right .project-media { width: min(74vw, 1000px); margin-left: 0; }
+.project-info, .offset .project-info, .right .project-info { width: min(74vw, 1000px); margin-left: 0; }
+.offset .project-media, .offset .project-info { align-self: center; }
+.right .project-media, .right .project-info { align-self: flex-end; }
+.about { scroll-snap-align: start; scroll-snap-stop: always; min-height: 100svh; align-content: center; }
+footer { scroll-snap-align: start; }
+@media (max-width: 700px) {
+  .section-head { padding: 0 20px; }
+  .project { min-height: 100svh; padding: 90px 20px 44px; justify-content: center; }
+  .project-media, .offset .project-media, .right .project-media, .project-info, .offset .project-info, .right .project-info { width: 100%; }
+}
